@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="f1223bd383b622102481ca96feaad37c" extends="task" label="Practice" max_length="40" name="u_practice" type="collection">
+        <element choice="1" label="State" max_length="40" name="u_state" type="choice">
+            <choice/>
+        </element>
+    </element>
+</database>

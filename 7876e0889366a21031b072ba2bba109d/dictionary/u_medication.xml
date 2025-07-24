@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="e5439d04936aa21031b072ba2bba1008" extends="task" label="Medication " max_length="40" name="u_medication" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Start Date" mandatory="true" max_length="40" name="u_start_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="completed" sequence="2" value="completed"/>
+                <element inactive_on_update="false" label="In Progress" sequence="0" value="in_progress"/>
+                <element inactive_on_update="false" label="New" sequence="1" value="new"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Prescribing Doctor" mandatory="true" max_length="32" name="u_prescribing_doctor" reference="u_doctor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient Id" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="End Date" mandatory="true" max_length="40" name="u_end_date" type="glide_date"/>
+        <element attributes="edge_encryption_enabled=true" label="Dosage" mandatory="true" max_length="1000" name="u_dosage" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Medication Name" mandatory="true" max_length="40" name="u_medication_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" label="Frequency" mandatory="true" max_length="40" name="u_frequency" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Twice Daily" sequence="1" value="2"/>
+                <element inactive_on_update="false" label="Thrice Daily" sequence="2" value="3"/>
+                <element inactive_on_update="false" label="Once Daily" sequence="0" value="1"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reminder" max_length="40" name="u_reminer" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Pending" sequence="0" value="pending"/>
+                <element inactive_on_update="false" label="Sent" sequence="1" value="sent"/>
+            </choice>
+        </element>
+    </element>
+</database>

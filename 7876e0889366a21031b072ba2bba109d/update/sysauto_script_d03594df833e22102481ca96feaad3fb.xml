@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <business_calendar/>
+        <condition/>
+        <conditional>false</conditional>
+        <entered_time>1970-01-01 12:12:12</entered_time>
+        <max_drift/>
+        <name>Send Appointment Reminders</name>
+        <offset/>
+        <offset_type>0</offset_type>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2025-07-22 17:35:30</run_start>
+        <run_time>1970-01-01 06:42:12</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var now = new GlideDateTime();  //Current Time
+var target = new GlideDateTime();
+target.addDays(1);
+
+var appgr = new GlideRecord('u_appointment');
+appgr.addQuery('u_appointment_date','>=',now);
+appgr.addQuery('u_appointment_date','<=',target);
+appgr.query();
+
+while(appgr.next()){
+	var patient = appgr.u_patient_id.getRefRecord();
+	if(patient){
+		gs.eventQueue('appointment.reminder.24hrs',appgr,patient.sys_id,patient.u_email);
+		gs.info('Reminder sent to '+ patient.u_first_name + 'for appointment scheduled on ' + appgr.u_appointment_date);
+	}
+}]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 18:07:00</sys_created_on>
+        <sys_id>d03594df833e22102481ca96feaad3fb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Send Appointment Reminders</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+        <sys_update_name>sysauto_script_d03594df833e22102481ca96feaad3fb</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 18:07:00</sys_updated_on>
+        <time_zone>Asia/Kolkata</time_zone>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>d03594df833e22102481ca96feaad3fb</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-22 18:06:58</sys_created_on>
+        <sys_id>116c9097837e22102481ca96feaad3b1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-22 18:06:58</sys_updated_on>
+        <table>sysauto_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="5d3eedc493eaa21031b072ba2bba10be" extends="task" label="Billing" max_length="40" name="u_billing" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive="true" inactive_on_update="true" label="Pending Overdue" sequence="0" value="pending overdue"/>
+                <element inactive_on_update="false" label="Paid" sequence="1" value="paid"/>
+                <element inactive_on_update="false" label="Pending" sequence="2" value="pending"/>
+                <element inactive_on_update="false" label="Overdue" sequence="0" value="overdue"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reminder" max_length="40" name="u_reminder" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Sent" sequence="0" value="sent"/>
+                <element inactive_on_update="false" label="Not Sent" sequence="1" value="not sent"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Appointment Id" mandatory="true" max_length="32" name="u_appointment_id" reference="u_appointment" type="reference"/>
+        <element attributes="edge_encryption_enabled=true,omit_sys_original=true" label="Total Amount" mandatory="true" max_length="20" name="u_total_amount" type="currency"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient Id" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
+    </element>
+</database>

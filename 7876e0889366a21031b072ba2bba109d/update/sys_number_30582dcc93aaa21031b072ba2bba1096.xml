@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="u_ward">u_ward</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>WRD</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-06-30 11:02:46</sys_created_on>
+        <sys_id>30582dcc93aaa21031b072ba2bba1096</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>WRD</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+        <sys_update_name>sys_number_30582dcc93aaa21031b072ba2bba1096</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-06-30 11:02:46</sys_updated_on>
+    </sys_number>
+</record_update>
