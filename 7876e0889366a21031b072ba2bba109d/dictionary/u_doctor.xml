@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="1c97fc0093e6a21031b072ba2bba1087" label="Doctor " max_length="40" name="u_doctor" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Doctor Id" max_length="40" name="u_number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Email" mandatory="true" max_length="40" name="u_email" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Office Location" mandatory="true" max_length="40" name="u_office_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Specialization" mandatory="true" max_length="40" name="u_specialization" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Cardiology" sequence="1" value="cardiology"/>
+                <element inactive_on_update="false" label="Pediatrics" sequence="2" value="pediatrics"/>
+                <element inactive_on_update="false" label="General Medicine" sequence="0" value="general medicine"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="First Name" mandatory="true" max_length="40" name="u_first_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Last Name" mandatory="true" max_length="40" name="u_last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Contact Number" max_length="40" name="u_contact_number" type="phone_number_e164"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_email"/>
+        </index>
+    </element>
+</database>

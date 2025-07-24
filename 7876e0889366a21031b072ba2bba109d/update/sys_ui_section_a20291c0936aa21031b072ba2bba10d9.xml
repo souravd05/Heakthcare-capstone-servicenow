@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="Doctor Information:" section_id="a20291c0936aa21031b072ba2bba10d9" sys_domain="global" table="u_appointment" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_doctor</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 09:25:27</sys_created_on>
+            <sys_id>9f0215c0936aa21031b072ba2bba1099</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Doctor Information:" display_value="Doctor Information:" name="u_appointment" sys_domain="global" view="Default view">a20291c0936aa21031b072ba2bba10d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 09:25:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_status</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 09:25:27</sys_created_on>
+            <sys_id>170215c0936aa21031b072ba2bba109a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Doctor Information:" display_value="Doctor Information:" name="u_appointment" sys_domain="global" view="Default view">a20291c0936aa21031b072ba2bba10d9</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 09:25:27</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>Doctor Information:</caption>
+            <header>false</header>
+            <name>u_appointment</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 09:25:24</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>a20291c0936aa21031b072ba2bba10d9</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_appointment</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+            <sys_update_name>sys_ui_section_a20291c0936aa21031b072ba2bba10d9</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 09:25:24</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

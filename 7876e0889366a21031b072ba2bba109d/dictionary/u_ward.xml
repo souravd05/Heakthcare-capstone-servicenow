@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="5518694c93aaa21031b072ba2bba103d" label="ward" max_length="40" name="u_ward" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Ward Id" max_length="40" name="u_number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Occupancy" mandatory="true" max_length="40" name="u_occupancy" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Location" mandatory="true" max_length="40" name="u_location" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Capacity" mandatory="true" max_length="40" name="u_capacity" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" label="Ward Name" mandatory="true" max_length="40" name="u_ward_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Under Maintenance" sequence="1" value="under maintenance"/>
+            </choice>
+        </element>
+    </element>
+</database>

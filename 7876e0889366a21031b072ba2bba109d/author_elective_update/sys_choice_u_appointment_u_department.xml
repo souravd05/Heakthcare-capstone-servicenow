@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_choice action="INSERT_OR_UPDATE" field="u_department" table="u_appointment" version="3">
+        <sys_choice_set action="INSERT_OR_UPDATE">
+            <element>u_department</element>
+            <name>u_appointment</name>
+            <sys_class_name>sys_choice_set</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 09:25:27</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_department</sys_name>
+            <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+            <sys_update_name>sys_choice_u_appointment_u_department</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 09:25:27</sys_updated_on>
+        </sys_choice_set>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>General Medicine</label>
+            <language>en</language>
+            <name>u_appointment</name>
+            <sequence>0</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 09:25:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 09:25:27</sys_updated_on>
+            <value>general medicine</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Cardiology</label>
+            <language>en</language>
+            <name>u_appointment</name>
+            <sequence>1</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 09:25:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 09:25:27</sys_updated_on>
+            <value>cardiology</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>u_department</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Pediatrics</label>
+            <language>en</language>
+            <name>u_appointment</name>
+            <sequence>2</sequence>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-06-30 09:25:27</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-06-30 09:25:27</sys_updated_on>
+            <value>pediatrics</value>
+        </sys_choice>
+    </sys_choice>
+</record_update>

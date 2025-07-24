@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="a91c3c8493e6a21031b072ba2bba1067" extends="task" label="Appointment " max_length="40" name="u_appointment" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" mandatory="true" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Confirmed" sequence="1" value="confirmed"/>
+                <element inactive_on_update="false" label="No Show" value="noshow"/>
+                <element inactive_on_update="false" label="Completed" sequence="2" value="completed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="3" value="cancelled"/>
+                <element inactive_on_update="false" label="CheckIn" value="checkin"/>
+                <element inactive_on_update="false" label="Inprogress" value="inprogress"/>
+                <element inactive_on_update="false" label="Schedule" sequence="0" value="schedule"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Doctor" mandatory="true" max_length="32" name="u_doctor" reference="u_doctor" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Department" mandatory="true" max_length="40" name="u_department" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Cardiology" sequence="1" value="cardiology"/>
+                <element inactive_on_update="false" label="Pediatrics" sequence="2" value="pediatrics"/>
+                <element inactive_on_update="false" label="General Medicine" sequence="0" value="general medicine"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Appointment Date" mandatory="true" max_length="40" name="u_appointment_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient Id" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
+    </element>
+</database>

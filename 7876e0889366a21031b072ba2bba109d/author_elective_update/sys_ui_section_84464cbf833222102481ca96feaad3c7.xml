@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section action="DELETE" caption="Emergency Contact:" section_id="84464cbf833222102481ca96feaad3c7" sys_domain="global" table="u_feedback" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>u_emergency_contact</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-24 05:47:11</sys_created_on>
+            <sys_id>48464cbf833222102481ca96feaad3c8</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="Emergency Contact:" display_value="Emergency Contact:" name="u_feedback" sys_domain="global" view="Default view">84464cbf833222102481ca96feaad3c7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-24 05:47:11</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="DELETE">
+            <caption>Emergency Contact:</caption>
+            <header>false</header>
+            <name>u_feedback</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-24 05:47:11</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>84464cbf833222102481ca96feaad3c7</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_feedback</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+            <sys_update_name>sys_ui_section_84464cbf833222102481ca96feaad3c7</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-24 05:47:11</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</application>
+        <file_path/>
+        <instance_id>64a589f21b4e061032182f8dee4bcbee</instance_id>
+        <instance_name>dev268543</instance_name>
+        <name>sys_ui_section_84464cbf833222102481ca96feaad3c7</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update><sys_ui_section caption="Emergency Contact:" section_id="84464cbf833222102481ca96feaad3c7" sys_domain="global" table="u_feedback" version="3" view=""><sys_ui_element action="INSERT_OR_UPDATE"><element>u_emergency_contact</element><position>0</position><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-24 05:47:11</sys_created_on><sys_id>48464cbf833222102481ca96feaad3c8</sys_id><sys_mod_count>0</sys_mod_count><sys_ui_formatter/><sys_ui_section caption="Emergency Contact:" display_value="Emergency Contact:" name="u_feedback" sys_domain="global" view="Default view">84464cbf833222102481ca96feaad3c7</sys_ui_section><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-24 05:47:11</sys_updated_on><sys_user/><type/></sys_ui_element><sys_ui_section action="INSERT_OR_UPDATE"><caption>Emergency Contact:</caption><header>false</header><name>u_feedback</name><roles/><sys_class_name>sys_ui_section</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-07-24 05:47:11</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>84464cbf833222102481ca96feaad3c7</sys_id><sys_mod_count>0</sys_mod_count><sys_name>u_feedback</sys_name><sys_overrides/><sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package><sys_policy/><sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope><sys_update_name>sys_ui_section_84464cbf833222102481ca96feaad3c7</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-07-24 05:47:11</sys_updated_on><sys_user/><title>false</title><view display_value="Default view" name="NULL">Default view</view><view_name/></sys_ui_section></sys_ui_section></record_update>]]></payload>
+        <payload_hash>-1592200023</payload_hash>
+        <record_name>Feedback</record_name>
+        <reverted_from/>
+        <source>9bba0eb4833662102481ca96feaad329</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-24 05:47:11</sys_created_on>
+        <sys_id>08464cbf833222102481ca96feaad3ca</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1983af8a7f80000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-24 05:47:11</sys_updated_on>
+        <type>Form Layout</type>
+        <update_guid>8c464cbff1322210a62c12a117aa74c9</update_guid>
+        <update_guid_history>8c464cbff1322210a62c12a117aa74c9:-1592200023</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-24 08:22:15</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_section">sys_ui_section</sys_db_object>
+        <sys_id>57b0645f04ca4300bd6b8e4fbfb24000</sys_id>
+        <sys_metadata>84464cbf833222102481ca96feaad3c7</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Emergency Contact:</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+        <sys_parent display_value="">a2e544bf833222102481ca96feaad339</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+        <sys_scope_delete display_value="">61c6a32368654748b24fe61f40e28029</sys_scope_delete>
+        <sys_update_name>sys_ui_section_84464cbf833222102481ca96feaad3c7</sys_update_name>
+        <sys_update_version display_value="sys_ui_section_84464cbf833222102481ca96feaad3c7">08464cbf833222102481ca96feaad3ca</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-24 08:22:15</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

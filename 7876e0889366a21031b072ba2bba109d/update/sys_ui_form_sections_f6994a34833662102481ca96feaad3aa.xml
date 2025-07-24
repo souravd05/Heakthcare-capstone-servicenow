@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="f6994a34833662102481ca96feaad3aa" sys_domain="global" table="u_nurse" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-15 07:39:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>b2994a34833662102481ca96feaad3ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_nurse" name="u_nurse" sys_domain="global" view="Default view">f6994a34833662102481ca96feaad3aa</sys_ui_form>
+            <sys_ui_section caption="Personal Information:" display_value="Personal Information:" name="u_nurse" sys_domain="global" view="Default view">a6a3a50893aaa21031b072ba2bba10bc</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-15 07:39:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-15 07:39:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>3e994a34833662102481ca96feaad3ab</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_nurse" name="u_nurse" sys_domain="global" view="Default view">f6994a34833662102481ca96feaad3aa</sys_ui_form>
+            <sys_ui_section caption="Activity/Notes:" display_value="Activity/Notes:" name="u_nurse" sys_domain="global" view="Default view">b6f5290c93aaa21031b072ba2bba1019</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-15 07:39:18</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-15 07:39:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>32994a34833662102481ca96feaad3af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_nurse" name="u_nurse" sys_domain="global" view="Default view">f6994a34833662102481ca96feaad3aa</sys_ui_form>
+            <sys_ui_section caption="Contact Information:" display_value="Contact Information:" name="u_nurse" sys_domain="global" view="Default view">baf5e50c93aaa21031b072ba2bba10a7</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-15 07:39:19</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-15 07:39:19</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>fe994a34833662102481ca96feaad3d2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="u_nurse" name="u_nurse" sys_domain="global" view="Default view">f6994a34833662102481ca96feaad3aa</sys_ui_form>
+            <sys_ui_section caption="Professional Information:" display_value="Professional Information:" name="u_nurse" sys_domain="global" view="Default view">f6f5290c93aaa21031b072ba2bba1018</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-15 07:39:19</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>u_nurse</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-07-15 07:39:18</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f6994a34833662102481ca96feaad3aa</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>u_nurse</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+            <sys_update_name>sys_ui_form_sections_f6994a34833662102481ca96feaad3aa</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-07-15 07:39:18</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="2b29190c936aa21031b072ba2bba1007" extends="task" label="Lab Test" max_length="40" name="u_lab_test" type="collection">
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled" sequence="0" value="scheduled"/>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="completed"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="2" value="cancelled"/>
+                <element inactive_on_update="false" label="In Progress" sequence="3" value="in_progress"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Scheduled Date" mandatory="true" max_length="40" name="u_scheduled_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient Id" mandatory="true" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Test Type" mandatory="true" max_length="40" name="u_test_type" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Urine Test" sequence="1" value="urine_test"/>
+                <element inactive_on_update="false" label="X-Ray" sequence="2" value="x-ray"/>
+                <element inactive_on_update="false" label="MRI" sequence="3" value="mri"/>
+                <element inactive_on_update="false" label="Blood Test" sequence="0" value="blood_test"/>
+                <element inactive_on_update="false" label="Etc" sequence="4" value="etc"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Result" mandatory="true" max_length="1000" name="u_result" type="string"/>
+    </element>
+</database>

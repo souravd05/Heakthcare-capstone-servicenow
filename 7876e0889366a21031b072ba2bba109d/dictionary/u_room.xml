@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="e81b29c093eaa21031b072ba2bba101d" label="Room" max_length="40" name="u_room" type="collection">
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Ward Id" mandatory="true" max_length="32" name="u_ward_id" reference="u_ward" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Work Notes" max_length="4000" name="u_work_notes" type="journal"/>
+        <element attributes="edge_encryption_enabled=true" label="Room Number" mandatory="true" max_length="40" name="u_room_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Occupied Beds" mandatory="true" max_length="40" name="u_occupied_beds" type="integer"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Room Id" mandatory="true" max_length="40" name="u_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Bed Count" mandatory="true" max_length="40" name="u_bed_count" type="integer"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_status" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
+                <element inactive_on_update="false" label="Occupied" sequence="1" value="occupied"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="u_ward_id"/>
+        </index>
+    </element>
+</database>

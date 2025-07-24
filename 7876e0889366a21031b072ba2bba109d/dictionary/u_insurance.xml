@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="3791390c93eaa21031b072ba2bba103e" extends="task" label="insurance" max_length="40" name="u_insurance" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Provider" mandatory="true" max_length="40" name="u_provider" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Coverage Details" mandatory="true" max_length="40" name="u_coverage_datails" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Policy Number" mandatory="true" max_length="40" name="u_policy_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Expiry Date" max_length="40" name="u_expiry_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Reminder" max_length="40" name="u_reminder" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Not sent" sequence="1" value="not sent"/>
+                <element inactive_on_update="false" label="Sent" sequence="0" value="sent"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true,encode_utf8=false" label="Patient Id" mandatory="true" max_length="32" name="u_reference_1" reference="u_patient_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Status" max_length="40" name="u_statuts" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+            </choice>
+        </element>
+    </element>
+</database>

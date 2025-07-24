@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7b9c207f83f222102481ca96feaad354" label="Patient Feedback" max_length="40" name="u_patient_feedback" type="collection">
+        <element attributes="edge_encryption_enabled=true" label="Submitted On" max_length="40" name="u_submitted_on" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" label="Rating" max_length="40" name="u_rating" type="string">
+            <choice>
+                <element inactive_on_update="false" label="Good" sequence="0" value="good"/>
+                <element inactive_on_update="false" label="Bad" sequence="1" value="bad"/>
+                <element inactive_on_update="false" label="Best" sequence="2" value="best"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Patient Id" max_length="32" name="u_patient_id" reference="u_patient_record" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Comments" max_length="255" name="u_comments" type="string_full_utf8"/>
+        <index name="index">
+            <element name="u_patient_id"/>
+        </index>
+    </element>
+</database>
