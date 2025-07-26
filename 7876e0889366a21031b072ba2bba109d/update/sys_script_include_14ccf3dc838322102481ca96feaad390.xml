@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global. InsuranceUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name> InsuranceUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var  InsuranceUtils = Class.create();
+ InsuranceUtils.prototype = {
+    initialize: function() {
+    },
+	getInsuranceDetailsByPatientId : function(patientId){
+		var gr = new GlideRecord('u_insurance');
+		gr.addQuery('u_reference_1',patientId);
+		gr.query();
+		var res = [];
+
+		while(gr.next()){
+			res.push({
+				Insurance_Id : gr.getValue('number'),
+				Provider : gr.getValue('u_provider'),
+				Coverage : gr.getValue('u_coverage_datails'),
+
+			});
+		}
+		return res;
+	},
+
+    type: ' InsuranceUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-26 13:09:25</sys_created_on>
+        <sys_id>14ccf3dc838322102481ca96feaad390</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name> InsuranceUtils</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+        <sys_update_name>sys_script_include_14ccf3dc838322102481ca96feaad390</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-26 13:10:02</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>14ccf3dc838322102481ca96feaad390</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-26 13:09:24</sys_created_on>
+        <sys_id>1daebbdc838322102481ca96feaad33e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-26 13:09:24</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

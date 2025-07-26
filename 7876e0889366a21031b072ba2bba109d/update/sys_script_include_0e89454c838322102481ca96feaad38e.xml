@@ -51,20 +51,65 @@ PatientUtils.prototype = {
 		}
 	},
 
+	getPatientAppointments : function(patientSysId){
+		var gr = new GlideRecord('u_appointment');
+		gr.addQuery('u_patient_id',patientSysId);
+		gr.query();
+		var res = [];
+		while(gr.next()){
+			res.push({
+				AppointmentId : gr.getValue('number'),
+				AppointmentDate : gr.getValue('u_appointment_date'),
+				DoctorId : gr.getDisplayValue('u_doctor')
+			});
+		}
+		return res;
+	},
+
+	getPatientMedication : function(patientSysId){
+		var gr = new GlideRecord('u_medication');
+		gr.addQuery('u_patient_id',patientSysId);
+		gr.query();
+		var med = [];
+		while(gr.next()){
+			med.push({
+				MedicationId : gr.getValue('number'),
+				MedicationName : gr.getValue('u_medication_name'),
+				Frequency: gr.getValue('u_frequency')
+			});
+		}
+		return med;
+	},
+
+	getPatientLabTest: function(patientSysId){
+		var gr = new GlideRecord('u_lab_test');
+		gr.addQuery('u_patient_id',patientSysId);
+		gr.query();
+		var res = [];
+		while(gr.next()){
+			res.push({
+				TestId : gr.getValue('number'),
+				TestType : gr.getValue('u_test_type'),
+				Result : gr.getValue('u_result')
+			});
+		}
+		return res;
+	},
+
     type: 'PatientUtils'
 };]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-07-25 05:22:36</sys_created_on>
         <sys_id>0e89454c838322102481ca96feaad38e</sys_id>
-        <sys_mod_count>6</sys_mod_count>
+        <sys_mod_count>12</sys_mod_count>
         <sys_name>PatientUtils</sys_name>
         <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
         <sys_policy/>
         <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
         <sys_update_name>sys_script_include_0e89454c838322102481ca96feaad38e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-07-25 17:50:14</sys_updated_on>
+        <sys_updated_on>2025-07-26 06:51:25</sys_updated_on>
     </sys_script_include>
     <sys_es_latest_script action="INSERT_OR_UPDATE">
         <id>0e89454c838322102481ca96feaad38e</id>
