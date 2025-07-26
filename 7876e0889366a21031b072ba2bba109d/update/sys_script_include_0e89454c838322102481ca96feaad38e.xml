@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>global.PatientUtils</api_name>
+        <caller_access/>
+        <client_callable>false</client_callable>
+        <description/>
+        <mobile_callable>false</mobile_callable>
+        <name>PatientUtils</name>
+        <sandbox_callable>false</sandbox_callable>
+        <script><![CDATA[var PatientUtils = Class.create();
+PatientUtils.prototype = {
+    initialize: function() {
+    },
+	getPatientDetailsById : function(patientId){
+		var res = {};
+		var gr = new GlideRecord('u_patient_record');
+		if(gr.get('u_number',patientId)){
+			res.sys_id = gr.getUniqueValue();
+			res.name = gr.getValue('u_first_name');
+			res.DOB = gr.getValue('u_date_of_birth');
+			res.gender = gr.getValue('u_gender');
+		}
+		return res;
+	},
+
+	checkVip : function(patientId){
+		var gr = new GlideRecord('u_patient_record');
+		if(gr.get('u_number',patientId)){
+			return gr.getValue('u_vip')==true || gr.getValue('u_vip')=='true';
+		}
+		return false;
+	},
+
+	getAge : function(patientId){
+		var gr = new GlideRecord('u_patient_record');
+		if(gr.get('u_number',patientId)){
+			var dobstr = gr.getValue('u_date_of_birth');
+			var dob = new GlideDate();
+			dob.setValue(dobstr);
+			var now = new GlideDate();
+
+			var dobinmills = dob.getNumericValue();
+			var nowinmills = now.getNumericValue();
+
+			var diffinmills = Math.abs(dobinmills-nowinmills);
+			var ageinyrs = Math.floor(diffinmills/(1000*60*60*24*365.25));
+
+			return ageinyrs;
+		}
+	},
+
+    type: 'PatientUtils'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-25 05:22:36</sys_created_on>
+        <sys_id>0e89454c838322102481ca96feaad38e</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>PatientUtils</sys_name>
+        <sys_package display_value="Healthcare Management Application" source="7876e0889366a21031b072ba2bba109d">7876e0889366a21031b072ba2bba109d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Healthcare Management Application">7876e0889366a21031b072ba2bba109d</sys_scope>
+        <sys_update_name>sys_script_include_0e89454c838322102481ca96feaad38e</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-25 17:50:14</sys_updated_on>
+    </sys_script_include>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>0e89454c838322102481ca96feaad38e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-07-25 05:22:35</sys_created_on>
+        <sys_id>fd3a89c8838322102481ca96feaad3c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-07-25 05:22:35</sys_updated_on>
+        <table>sys_script_include</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>
